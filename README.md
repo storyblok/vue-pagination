@@ -1,5 +1,5 @@
 # vue-pagination
-Vue pagination component for use with Bootstrap and Laravel pagination.
+Vue pagination component for use with Uikit.
 
 * [Vue.js](http://vuejs.org/) (tested with 1.0.26).
 * [UIkit](http://getuikit.com/)
