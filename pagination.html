@@ -1,0 +1,14 @@
+<nav>
+  <ul class="uk-pagination">
+    <li v-if="pagination.current_page > 1">
+      <a href="#" aria-label="Previous" @click.prevent="changePage(pagination.current_page - 1)"><i class="uk-icon-angle-double-left"></i></a>
+    </li>
+    <li v-for="num in array" :class="{'uk-active': num == pagination.current_page}">
+      <span v-if="num == pagination.current_page">{{ num }}</span>
+      <a href="#" @click.prevent="changePage(num)" v-else>{{ num }}</a>
+    </li>
+    <li v-if="pagination.current_page <= pagination.last_page">
+      <a href="#" aria-label="Next" @click.prevent="changePage(pagination.current_page + 1)"><i class="uk-icon-angle-double-right"></i></a>
+    </li>
+  </ul>
+</nav>
